@@ -24,6 +24,9 @@ git commit -m "comment message"
 git commit -am "Changing compiler plugin to Java source 11"
 
 git push
+#-or-
+git push origin master
+
 
 
 

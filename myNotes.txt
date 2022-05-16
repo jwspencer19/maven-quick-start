@@ -3,6 +3,8 @@ https://github.com/programming-clinic
 
 # maven site
 http://maven.apache.org
+-dependencies
+-archetype
 
 # maven central - resolve dependencies
 https://search.maven.org/
@@ -14,6 +16,9 @@ https://search.maven.org/
 # run java program from build jar
 cd C:\Spence\Training\Maven\projects\maven-quick-start\target
 java -cp maven-quick-start-1.0.jar clinic.programming.training.Application
+
+# list contents of jar file
+jar -tf maven-quick-start-1.0.jar
 
 # compile lifecycle
 mvn compile
@@ -44,3 +49,25 @@ C:\Spence\Training\Maven\projects\maven-quick-start\target\surefire-reports\clin
 
 # run all lifecycles compile, package, and test
 mvn clean install
+
+# Maven Archetypes
+cd C:\Spence\Training\Maven\projects
+
+mvn archetype:generate
+
+# filter down list by entering: maven-archetype
+
+# choose #83 default
+83: remote -> org.apache.maven.archetypes:maven-archetype-quickstart (An archetype which contains a sample Maven project.)
+Define value for property 'groupId': clinic.programming.training
+Define value for property 'artifactId': quick-start-example
+Define value for property 'version' 1.0-SNAPSHOT: : 1.0
+Define value for property 'package' clinic.programming.training: :
+Confirm properties configuration:
+groupId: clinic.programming.training
+artifactId: quick-start-example
+version: 1.0
+package: clinic.programming.training
+
+# archetypes noninteractive
+mvn archetype:generate -DgroupId=clinic.programming.training -DartifactId=jumpstart-example -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false

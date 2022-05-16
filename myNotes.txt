@@ -31,3 +31,7 @@ mvn clean package
 # install will copy jar to a special location in our local repository under .m2
 # C:\Users\spencer\.m2\repository\clinic\programmming\maven-quick-start\1.0\maven-quick-start-1.0.ja
 mvn install
+
+# list maven dependency tree
+mvn dependency:tree
+mvn dependency:tree > dependency-list.txt

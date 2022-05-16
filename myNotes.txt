@@ -1,0 +1,33 @@
+# instructor code
+https://github.com/programming-clinic
+
+# maven site
+http://maven.apache.org
+
+# maven central - resolve dependencies
+https://search.maven.org/
+# example, search: commons-lang3
+# look for org.apache.commons 
+# click on version 3.10.1
+# cut & paste dependency into pom.xml
+
+# run java program from build jar
+cd C:\Spence\Training\Maven\projects\maven-quick-start\target
+java -cp maven-quick-start-1.0.jar clinic.programming.training.Application
+
+# compile lifecycle
+mvn compile
+
+# compile and package
+mvn package
+
+# clean up target directory
+mvn clean
+
+# run both clean and then package
+mvn clean package
+
+# run compile, package, and install
+# install will copy jar to a special location in our local repository under .m2
+# C:\Users\spencer\.m2\repository\clinic\programmming\maven-quick-start\1.0\maven-quick-start-1.0.ja
+mvn install

@@ -1,0 +1,34 @@
+git add pom.xml
+
+git status
+
+git commit -m "Adding minimal POM file to project"
+
+git log
+
+git push
+
+
+# create empty "hidden" file so git will keep directory structure
+touch src/main/java/.gitkeep
+
+# recursively add files to 
+git add .
+
+# will also add any new files
+git add -A
+
+git commit -m "comment message"
+
+# add and commit
+git commit -am "Changing compiler plugin to Java source 11"
+
+git push
+
+
+
+
+
+
+
+

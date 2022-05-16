@@ -35,3 +35,12 @@ mvn install
 # list maven dependency tree
 mvn dependency:tree
 mvn dependency:tree > dependency-list.txt
+
+# run maven unit tests
+mvn test
+
+# also mvn test results written to:
+C:\Spence\Training\Maven\projects\maven-quick-start\target\surefire-reports\clinic.programming.training.ApplicationTest.txt
+
+# run all lifecycles compile, package, and test
+mvn clean install
